@@ -1,7 +1,7 @@
 
-// *
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -16,7 +16,7 @@ const NavBar = () => {
       <nav className='flex flex-col md:flex-row justify-between items-center mx-4 md:mx-10 mt-4 md:mt-10 mb-4 md:mb-4'>
         <div className="flex justify-between items-center w-full md:w-auto">
           <div className="flex justify-center items-center gap-2 ml-0 md:ml-10">
-            <img src="src/assets/logo.png" alt="Logo" width={50} />
+            <img src={logo} alt="Logo" width={50} />
             <h1 className='text-xl font-bold text-[#181818]'>UniGradebook</h1>
           </div>
           <button className="md:hidden" onClick={toggleNav}>
